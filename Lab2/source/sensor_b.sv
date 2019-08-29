@@ -14,7 +14,7 @@ module sensor_b
 
 always_comb
 begin
-	if (sensors[0] == 1'b1 | sensors[3:1] == 3'b111 | (sensors[1] && sensors[3] == 1'b1) | (sensors[1] && sensors[2] == 1'b1)) begin
+	if (sensors[0] == 1'b1 || sensors[3:1] == 3'b111 || (sensors[1] && sensors[3] == 1'b1) || (sensors[1] && sensors[2] == 1'b1)) begin
 		
 		error = 1;
 
