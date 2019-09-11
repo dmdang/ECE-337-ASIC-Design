@@ -75,11 +75,16 @@ initial begin
   tb_test_cases[3].test_name = "A big, B big";
   tb_test_cases[3].test_a    = 'd65535;
   tb_test_cases[3].test_b    = 'd65535;
-  tb_test_cases[3].test_cin  = 1'b0;
+  tb_test_cases[3].test_cin  = 1'b1;
 
   tb_test_cases[4].test_name = "A small, B small";
   tb_test_cases[4].test_a    = 'd2;
   tb_test_cases[4].test_b    = 'd2;
+  tb_test_cases[4].test_cin  = 1'b0;
+
+  tb_test_cases[4].test_name = "a[1] high to low";
+  tb_test_cases[4].test_a    = 'd0;
+  tb_test_cases[4].test_b    = 'd0;
   tb_test_cases[4].test_cin  = 1'b0;
   
 end
