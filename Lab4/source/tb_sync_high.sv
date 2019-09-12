@@ -1,16 +1,14 @@
-// 337 TA Provided Lab 4 Testbench
-// This code serves as a starer test bench for the synchronizer design
-// STUDENT: Replace this message and the above header section with an
-// appropriate header based on your other code files
-
-// 0.5um D-FlipFlop Timing Data Estimates:
-// Data Propagation delay (clk->Q): 670ps
-// Setup time for data relative to clock: 190ps
-// Hold time for data relative to clock: 10ps
+// $Id: $
+// File name:   tb_sync_high.sv
+// Created:     9/11/2019
+// Author:      David Dang
+// Lab Section: 337-05
+// Version:     1.0  Initial Design Entry
+// Description: tb_sync_high
 
 `timescale 1ns / 10ps
 
-module tb_sync_low();
+module tb_sync_high();
 
   // Define local parameters used by the test bench
   localparam  CLK_PERIOD    = 1;
@@ -18,7 +16,7 @@ module tb_sync_low();
   localparam  FF_HOLD_TIME  = 0.100;
   localparam  CHECK_DELAY   = (CLK_PERIOD - FF_SETUP_TIME); // Check right before the setup time starts
   
-  localparam  INACTIVE_VALUE     = 1'b0;
+  localparam  INACTIVE_VALUE     = 1'b1;
   localparam  RESET_OUTPUT_VALUE = INACTIVE_VALUE;
   
   // Declare DUT portmap signals
@@ -96,7 +94,7 @@ module tb_sync_low();
   end
   
   // DUT Port map
-  sync_low DUT(.clk(tb_clk), .n_rst(tb_n_rst), .async_in(tb_async_in), .sync_out(tb_sync_out));
+  sync_high DUT(.clk(tb_clk), .n_rst(tb_n_rst), .async_in(tb_async_in), .sync_out(tb_sync_out));
   
   // Test bench main process
   initial
@@ -312,4 +310,4 @@ module tb_sync_low();
     end
     
   end
-endmodule
+endmodule 
