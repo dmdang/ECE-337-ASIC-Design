@@ -145,7 +145,7 @@ module tb_sync_low();
                   "after reset was released");
 
     // ************************************************************************
-    // Test Case 2: Normal Operation with Input as a '1'
+    // Test Case 2a: Normal Operation with Input as a '1'
     // ************************************************************************    
     @(negedge tb_clk); 
     tb_test_num = tb_test_num + 1;
@@ -223,6 +223,28 @@ module tb_sync_low();
     check_output_meta("after processing delay");
     
     // STUDENT: Add your additional test cases here
+
+    // ************************************************************************
+    // Test Case 2b: Normal Operation with Input as a '0'
+    // ************************************************************************    
+    @(negedge tb_clk); 
+    tb_test_num = tb_test_num + 1;
+    tb_test_case = "Normal Operation with Input as a '0'";
+    // Start out with inactive value and reset the DUT to isolate from prior tests
+    tb_async_in = INACTIVE_VALUE;
+    reset_dut();
+
+    // Assign test case stimulus
+    tb_async_in = 1'b0;
+
+    // Wait for DUT to process stimulus before checking results
+    @(posedge tb_clk); 
+    @(posedge tb_clk); 
+    // Move away from risign edge and allow for propagation delays before checking
+    #(CHECK_DELAY);
+    // Check results
+    check_output( 1'b0,
+                  "after processing delay");
 
     // ************************************************************************    
     // Test Case 3b: Setup Violation with Input as a '1'
