@@ -27,7 +27,8 @@ module tb_fir_filter();
 	typedef struct
 	{
 		reg [MAX_VAL_BIT:0] coeffs[3:0];
-		reg [MAX_VAL_BIT:0] samples[3:0];
+		//reg [MAX_VAL_BIT:0] samples[3:0];
+		reg [MAX_VAL_BIT:0] samples[1019:0];
 		reg [MAX_VAL_BIT:0] results[3:0];
 		reg errors[3:0];
 	} testVector;
@@ -240,9 +241,9 @@ module tb_fir_filter();
 		
 		// Send the stream of samples provided
 		tb_test_sample_num = 0;
-		for(s = 0; s < 4; s++)
+		for(s = 0; s < 1020; s++)
 		begin
-			test_sample(tv.samples[s], tv.results[s], tv.errors[s], 1'b0);
+			test_sample(tv.samples[s], 16'd0, 16'd0, 1'b0);
 		end
 	end
 	endtask
@@ -251,18 +252,36 @@ module tb_fir_filter();
 	initial
 	begin // TODO: Add more standard test cases here
 		// Populate the test vector array to use
+/*
 		tb_test_vectors = new[2];
+		//tb_test_vectors = new[1020];
+		//tb_test_vectors[0].coeffs = {{
 		// Test case 0
-		tb_test_vectors[0].coeffs		= {{COEFF_5}, {COEFF1}, {COEFF1}, {COEFF_5}};
-		tb_test_vectors[0].samples	= {16'd100, 16'd100, 16'd100, 16'd100};
-		tb_test_vectors[0].results	= {16'd0, 16'd50, 16'd50 ,16'd50};
-		tb_test_vectors[0].errors		= {1'b0, 1'b0, 1'b0, 1'b0};
+		tb_test_vectors[0].coeffs = {{COEFF_5}, {COEFF1}, {COEFF1}, {COEFF_5}};
+		tb_test_vectors[0].samples = {16'd100, 16'd100, 16'd100, 16'd100};
+		tb_test_vectors[0].results = {16'd0, 16'd50, 16'd50 ,16'd50};
+		tb_test_vectors[0].errors = {1'b0, 1'b0, 1'b0, 1'b0};
 		// Test case 1
+
 		tb_test_vectors[1].coeffs		= tb_test_vectors[0].coeffs;
 		tb_test_vectors[1].samples	= {16'd1000, 16'd1000, 16'd100, 16'd100};
 		tb_test_vectors[1].results	= {16'd450, 16'd500, 16'd50 ,16'd50};
 		tb_test_vectors[1].errors		= {1'b0, 1'b0, 1'b0, 1'b0};
+*/
+		int j;
+		tb_test_vectors = new[1];
+
+		// Test case 0
+		tb_test_vectors[0].coeffs = {{COEFF_5}, {COEFF1}, {COEFF1}, {COEFF_5}};
+		//tb_test_vectors[0].samples = {16'd100, 16'd100, 16'd100, 16'd100};
+		tb_test_vectors[0].results = {16'd0, 16'd50, 16'd50 ,16'd50};
+		tb_test_vectors[0].errors = {1'b0, 1'b0, 1'b0, 1'b0};
+		
+		for (j = 0; j < 1020; j++) begin
+			tb_test_vectors[0].samples[j] = 16'd100;		
+		end
 	end
+	
 	
 	// Test bench process
 	initial

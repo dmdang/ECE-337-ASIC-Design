@@ -295,6 +295,35 @@ module tb_rcv_block();
     check_outputs(tb_test_data_read);
   
     // Append additonal test cases here (such as overrun case)
+
+    // Test case 3: overrun case
+    @(negedge tb_clk);
+    tb_test_num += 1;
+    tb_test_case = "overrun case";
+
+
+
+
+
+    
+
+
+
+
+    // DUT Reset
+    reset_dut;
+    
+    // Send packet
+    send_packet(tb_test_data, tb_test_stop_bit, tb_test_bit_period);
+    
+    // Wait for 2 data periods to allow DUT to finish processing the packet
+    #(tb_test_bit_period * 2);
+    
+    // Check outputs
+    check_outputs(tb_test_data_read);
+
+
+    
     
   end
 

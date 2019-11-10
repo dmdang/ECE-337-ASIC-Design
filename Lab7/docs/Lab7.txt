@@ -1,0 +1,18 @@
+7.1 
+
+-data_ready must be asserted for a minimum of 2 clock cycles
+
+-data should remain valid for at least 3 clock cycles 
+
+7.2
+
+-after passing through the filter, the image doesn't show any white pixels. This makes sense because the filter is acting as a high pass filter and is filtering out the higher pixel values (white = 255, black = 0)
+
+-$fopen(filename, mode)
+ $fscanf(file_pointer, format_specifier, destination)
+ $ftell(file_pointer)
+ $fseek(file_pointer, offset_from_cursor, initial_cursor_position)
+ $fclose(file_pointer)
+ $fwrite(file_pointer, format_specifier, destination)
+
+-%c, %d, %f, %s, %o, %b, %e, %g, %h, %l, %m, %t, %u, %v, %z

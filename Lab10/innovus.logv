@@ -1,0 +1,635 @@
+[11/09 20:50:37      0s] 
+[11/09 20:50:37      0s] Cadence Innovus(TM) Implementation System.
+[11/09 20:50:37      0s] Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/09 20:50:37      0s] 
+[11/09 20:50:37      0s] Version:	v16.12-s051_1, built Wed Aug 17 12:18:54 PDT 2016
+[11/09 20:50:37      0s] Options:	
+[11/09 20:50:37      0s] Date:		Sat Nov  9 20:50:37 2019
+[11/09 20:50:37      0s] Host:		ee215lnx16.ecn.purdue.edu (x86_64 w/Linux 2.6.32-754.23.1.el6.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz 8192KB)
+[11/09 20:50:37      0s] OS:		CentOS release 6.10 (Final)
+[11/09 20:50:37      0s] 
+[11/09 20:50:37      0s] License:
+[11/09 20:50:37      0s] 		invs	Innovus Implementation System	16.1	checkout succeeded
+[11/09 20:50:37      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/09 20:50:58      8s] @(#)CDS: Innovus v16.12-s051_1 (64bit) 08/17/2016 12:18 (Linux 2.6.18-194.el5)
+[11/09 20:50:58      8s] @(#)CDS: NanoRoute 16.12-s051_1 NR160816-1350/16_12-UB (database version 2.30, 347.6.1) {superthreading v1.30}
+[11/09 20:50:58      8s] @(#)CDS: AAE 16.12-s026 (64bit) 08/17/2016 (Linux 2.6.18-194.el5)
+[11/09 20:50:58      8s] @(#)CDS: CTE 16.12-s023_1 () Aug 12 2016 01:35:46 ( )
+[11/09 20:50:58      8s] @(#)CDS: SYNTECH 16.12-s009_1 () Aug 11 2016 01:33:09 ( )
+[11/09 20:50:58      8s] @(#)CDS: CPE v16.12-s054
+[11/09 20:50:58      8s] @(#)CDS: IQRC/TQRC 15.2.4-s467 (64bit) Wed Jul 20 17:12:38 PDT 2016 (Linux 2.6.18-194.el5)
+[11/09 20:50:58      8s] @(#)CDS: OA 22.50-p049 Fri Jun 10 10:56:20 2016
+[11/09 20:50:58      8s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[11/09 20:50:58      8s] @(#)CDS: RCDB 11.8
+[11/09 20:50:58      8s] --- Running on ee215lnx16.ecn.purdue.edu (x86_64 w/Linux 2.6.32-754.23.1.el6.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz 8192KB) ---
+[11/09 20:50:58      8s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_22924_ee215lnx16.ecn.purdue.edu_mg143_NdVFvp.
+
+[11/09 20:50:59      8s] 
+[11/09 20:50:59      8s] **INFO:  MMMC transition support version v31-84 
+[11/09 20:50:59      8s] 
+[11/09 20:50:59      8s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/09 20:50:59      8s] <CMD> suppressMessage ENCEXT-2799
+[11/09 20:50:59      8s] <CMD> getDrawView
+[11/09 20:50:59      8s] <CMD> loadWorkspace -name Physical
+[11/09 20:50:59      8s] <CMD> win
+[11/09 20:52:32     17s] <CMD> getCTSMode -engine -quiet
+[11/09 20:52:32     17s] <CMD> getCTSMode -engine -quiet
+[11/09 20:52:32     17s] <CMD> getCTSMode -engine -quiet
+[11/09 20:52:32     17s] <CMD> getCTSMode -engine -quiet
+[11/09 20:52:32     17s] <CMD> getCTSMode -engine -quiet
+[11/09 20:52:32     17s] <CMD> getCTSMode -engine -quiet
+[11/09 20:52:32     17s] <CMD> getCTSMode -engine -quiet
+[11/09 20:52:32     17s] <CMD> getCTSMode -engine -quiet
+[11/09 20:52:32     17s] <CMD> getCTSMode -engine -quiet
+[11/09 20:52:32     17s] <CMD> getCTSMode -engine -quiet
+[11/09 20:52:32     17s] <CMD> getCTSMode -engine -quiet
+[11/09 20:53:34     25s] <CMD> pan 0.022 -0.013
+[11/09 20:55:44     36s] <CMD> setDrawView ameba
+[11/09 20:55:44     36s] <CMD> setDrawView place
+[11/09 20:56:24     41s] <CMD> fit
+[11/09 20:56:24     41s] <CMD> fit
+[11/09 20:56:25     41s] <CMD> fit
+[11/09 20:58:56     56s] <CMD> set init_verilog mapped/layout_lab_design.v
+[11/09 20:58:56     56s] <CMD> init_design
+[11/09 20:58:56     56s] **WARN: (GLOBAL-100):	Global 'timing_disable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+[11/09 20:58:56     56s] No LEF file provided, but timing lib is provided.
+[11/09 20:58:56     56s] Use timer mode.
+[11/09 20:58:56     56s] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.94min, fe_real=8.32min, fe_mem=530.0M) ***
+[11/09 20:58:56     56s] #- Begin Load netlist data ... (date=11/09 20:58:56, mem=530.0M)
+[11/09 20:58:56     56s] *** Begin netlist parsing (mem=530.0M) ***
+[11/09 20:58:56     56s] Created 0 new cells from 0 timing libraries.
+[11/09 20:58:56     56s] Reading netlist ...
+[11/09 20:58:56     56s] Backslashed names will retain backslash and a trailing blank character.
+[11/09 20:58:56     56s] Reading verilog netlist 'mapped/layout_lab_design.v'
+[11/09 20:58:56     56s] Module DFFSR is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module NOR2X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module MUX2X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module INVX1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module NAND2X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module XNOR2X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module OAI21X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module AOI22X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module AOI21X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module DFFPOSX1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module BUFX2 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module OR2X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module INVX2 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module NAND3X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module XOR2X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module OAI22X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module AND2X1 is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module PADOUT is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] Module PADINC is not defined and will be treated as an empty module.
+[11/09 20:58:56     56s] 
+[11/09 20:58:56     56s] *** Memory Usage v#1 (Current mem = 532.617M, initial mem = 166.574M) ***
+[11/09 20:58:56     56s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=532.6M) ***
+[11/09 20:58:56     56s] #- End Load netlist data ... (date=11/09 20:58:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=532.6M, current mem=532.6M)
+[11/09 20:58:56     56s] Top level cell is layout_lab_design.
+[11/09 20:58:56     56s] Hooked 0 DB cells to tlib cells.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'NOR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'DFFSR' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'PADINC' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'PADOUT' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'AND2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'OAI22X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'XOR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'NAND3X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'INVX2' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'OR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'BUFX2' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'DFFPOSX1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'AOI21X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'AOI22X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'OAI21X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'XNOR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'NAND2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'INVX1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] **WARN: (IMPDB-2504):	Cell 'MUX2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[11/09 20:58:56     56s] Cell 'XNOR2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'XNOR2X1' as output for net 'tx_value' in module 'layout_lab_usb_encoder'.
+[11/09 20:58:56     56s] Cell 'MUX2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'MUX2X1' as output for net 'n1' in module 'layout_lab_usb_encoder'.
+[11/09 20:58:56     56s] Cell 'INVX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'INVX1' as output for net 'n25' in module 'layout_lab_usb_tx_sr_1'.
+[11/09 20:58:56     56s] Cell 'OR2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'OR2X1' as output for net 'rdata[7]' in module 'fiforam'.
+[11/09 20:58:56     56s] Cell 'AOI22X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AOI22X1' as output for net 'n9' in module 'fiforam'.
+[11/09 20:58:56     56s] Cell 'INVX2' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'INVX2' as output for net 'n61' in module 'fiforam'.
+[11/09 20:58:56     56s] Cell 'NAND3X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NAND3X1' as output for net 'n183' in module 'fiforam'.
+[11/09 20:58:56     56s] Cell 'DFFSR' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Q' of cell 'DFFSR' as output for net 'wptr[3]' in module 'write_ptr'.
+[11/09 20:58:56     56s] Cell 'XOR2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'XOR2X1' as output for net 'wptr_nxt[2]' in module 'write_ptr'.
+[11/09 20:58:56     56s] Cell 'BUFX2' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'BUFX2' as output for net 'wenable_fifo' in module 'write_fifo_ctrl'.
+[11/09 20:58:56     56s] Cell 'NOR2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NOR2X1' as output for net 'N5' in module 'write_fifo_ctrl'.
+[11/09 20:58:56     56s] Cell 'NAND2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NAND2X1' as output for net 'n3' in module 'write_fifo_ctrl'.
+[11/09 20:58:56     56s] Cell 'OAI21X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'OAI21X1' as output for net 'n32' in module 'layout_lab_usb_timer'.
+[11/09 20:58:56     56s] Cell 'AOI21X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AOI21X1' as output for net 'n9' in module 'layout_lab_usb_tcu'.
+[11/09 20:58:56     56s] Cell 'AND2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AND2X1' as output for net 'n41' in module 'layout_lab_usb_tcu'.
+[11/09 20:58:56     56s] Cell 'PADOUT' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'YPAD' of cell 'PADOUT' as output for net 'd_plus' in module 'layout_lab_design'.
+[11/09 20:58:56     56s] Cell 'PADINC' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'DI' of cell 'PADINC' as output for net 'nclk' in module 'layout_lab_design'.
+[11/09 20:58:56     56s] Cell 'DFFPOSX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Q' of cell 'DFFPOSX1' as output for net '\fiforeg[0][7] ' in module 'fiforam'.
+[11/09 20:58:56     56s] Cell 'OAI22X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'OAI22X1' as output for net 'n15' in module 'layout_lab_usb_timer'.
+[11/09 20:58:56     56s] 19 empty module found.
+[11/09 20:58:56     56s] Starting recursive module instantiation check.
+[11/09 20:58:56     56s] No recursion found.
+[11/09 20:58:56     56s] Term dir updated for 0 vinsts of 19 cells.
+[11/09 20:58:56     56s] Building hierarchical netlist for Cell layout_lab_design ...
+[11/09 20:58:56     56s] *** Netlist is unique.
+[11/09 20:58:56     56s] ** info: there are 35 modules.
+[11/09 20:58:56     56s] ** info: there are 0 stdCell insts.
+[11/09 20:58:56     56s] 
+[11/09 20:58:56     56s] *** Memory Usage v#1 (Current mem = 550.371M, initial mem = 166.574M) ***
+[11/09 20:58:56     56s] Set Default Net Delay as 1000 ps.
+[11/09 20:58:56     56s] Set Default Net Load as 0.5 pF. 
+[11/09 20:58:56     56s] Set Default Input Pin Transition as 0.1 ps.
+[11/09 20:58:56     56s] **WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+[11/09 20:58:56     56s] 
+[11/09 20:58:56     56s] *** Summary of all messages that are not suppressed in this session:
+[11/09 20:58:56     56s] Severity  ID               Count  Summary                                  
+[11/09 20:58:56     56s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[11/09 20:58:56     56s] WARNING   IMPDB-2504          19  Cell '%s' is instantiated in the Verilog...
+[11/09 20:58:56     56s] *** Message Summary: 20 warning(s), 0 error(s)
+[11/09 20:58:56     56s] 
+[11/09 21:01:07     70s] <CMD> set init_verilog {}
+[11/09 21:01:07     70s] <CMD> init_design
+[11/09 21:01:07     70s] **WARN: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[11/09 21:01:07     70s] 
+[11/09 21:01:07     70s] *** Summary of all messages that are not suppressed in this session:
+[11/09 21:01:07     70s] Severity  ID               Count  Summary                                  
+[11/09 21:01:07     70s] WARNING   IMPSYT-7329          1  Cannot load design with init_design, aft...
+[11/09 21:01:07     70s] *** Message Summary: 1 warning(s), 0 error(s)
+[11/09 21:01:07     70s] 
+[11/09 21:02:45     78s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/09 21:02:45     78s] <CMD> suppressMessage ENCEXT-2799
+[11/09 21:02:45     78s] <CMD> getDrawView
+[11/09 21:02:45     78s] <CMD> loadWorkspace -name Physical
+[11/09 21:02:45     78s] <CMD> win
+[11/09 21:02:46     78s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[11/09 21:02:46     78s] <CMD> set conf_qxconf_file NULL
+[11/09 21:02:46     78s] <CMD> set conf_qxlib_file NULL
+[11/09 21:02:46     78s] <CMD> set defHierChar /
+[11/09 21:02:46     78s] Set Default Input Pin Transition as 0.1 ps.
+[11/09 21:02:46     78s] <CMD> set delaycal_input_transition_delay 0.1ps
+[11/09 21:02:46     78s] <CMD> set distributed_client_message_echo 1
+[11/09 21:02:46     78s] <CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+[11/09 21:02:46     78s] <CMD> set floorplan_default_site core
+[11/09 21:02:46     78s] <CMD> set fpIsMaxIoHeight 0
+[11/09 21:02:46     78s] <CMD> set init_gnd_net gnd
+[11/09 21:02:46     78s] <CMD> set init_io_file innovus.io
+[11/09 21:02:46     78s] <CMD> set init_lef_file {/package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.lef /package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.stacks.lef}
+[11/09 21:02:46     78s] <CMD> set init_mmmc_file osu05_MMMC.view
+[11/09 21:02:46     78s] <CMD> set init_oa_search_lib {}
+[11/09 21:02:46     78s] <CMD> set init_pwr_net vdd
+[11/09 21:02:46     78s] <CMD> set init_verilog mapped/layout_lab_design.v
+[11/09 21:02:46     78s] <CMD> set latch_time_borrow_mode max_borrow
+[11/09 21:02:46     78s] <CMD> set pegDefaultResScaleFactor 1
+[11/09 21:02:46     78s] <CMD> set pegDetailResScaleFactor 1
+[11/09 21:02:46     78s] <CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+[11/09 21:02:46     78s] <CMD> set timing_library_ccs_noise_vin_clip_points {}
+[11/09 21:02:46     78s] <CMD> set timing_library_ccs_noise_vout_clip_points {}
+[11/09 21:02:46     78s] <CMD> set timing_library_load_pin_cap_indices {}
+[11/09 21:02:46     78s] <CMD> set timing_library_write_library_to_directory {}
+[11/09 21:02:46     78s] <CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[11/09 21:02:46     78s] <CMD> init_design
+[11/09 21:02:46     78s] **WARN: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[11/09 21:02:46     78s] 
+[11/09 21:02:46     78s] *** Summary of all messages that are not suppressed in this session:
+[11/09 21:02:46     78s] Severity  ID               Count  Summary                                  
+[11/09 21:02:46     78s] WARNING   IMPSYT-7329          1  Cannot load design with init_design, aft...
+[11/09 21:02:46     78s] *** Message Summary: 1 warning(s), 0 error(s)
+[11/09 21:02:46     78s] 
+[11/09 21:02:46     78s] <CMD> floorPlan -r 1.0 0.6 50 50 50 50
+[11/09 21:02:46     78s] floorPlan cannot be used in timer mode
+[11/09 21:03:22     83s] <CMD> init_design
+[11/09 21:03:22     83s] **WARN: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[11/09 21:03:22     83s] 
+[11/09 21:03:22     83s] *** Summary of all messages that are not suppressed in this session:
+[11/09 21:03:22     83s] Severity  ID               Count  Summary                                  
+[11/09 21:03:22     83s] WARNING   IMPSYT-7329          1  Cannot load design with init_design, aft...
+[11/09 21:03:22     83s] *** Message Summary: 1 warning(s), 0 error(s)
+[11/09 21:03:22     83s] 
+[11/09 21:03:27     83s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/09 21:03:27     83s] <CMD> suppressMessage ENCEXT-2799
+[11/09 21:03:27     83s] <CMD> getDrawView
+[11/09 21:03:27     83s] <CMD> loadWorkspace -name Physical
+[11/09 21:03:27     83s] <CMD> win
+[11/09 21:03:27     83s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[11/09 21:03:27     83s] <CMD> set conf_qxconf_file NULL
+[11/09 21:03:27     83s] <CMD> set conf_qxlib_file NULL
+[11/09 21:03:27     83s] <CMD> set defHierChar /
+[11/09 21:03:27     83s] Set Default Input Pin Transition as 0.1 ps.
+[11/09 21:03:27     83s] <CMD> set delaycal_input_transition_delay 0.1ps
+[11/09 21:03:27     83s] <CMD> set distributed_client_message_echo 1
+[11/09 21:03:27     83s] <CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+[11/09 21:03:27     83s] <CMD> set floorplan_default_site core
+[11/09 21:03:27     83s] <CMD> set fpIsMaxIoHeight 0
+[11/09 21:03:27     83s] <CMD> set init_gnd_net gnd
+[11/09 21:03:27     84s] <CMD> set init_io_file innovus.io
+[11/09 21:03:27     84s] <CMD> set init_lef_file {/package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.lef /package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.stacks.lef}
+[11/09 21:03:27     84s] <CMD> set init_mmmc_file osu05_MMMC.view
+[11/09 21:03:27     84s] <CMD> set init_oa_search_lib {}
+[11/09 21:03:27     84s] <CMD> set init_pwr_net vdd
+[11/09 21:03:27     84s] <CMD> set init_verilog mapped/layout_lab_design.v
+[11/09 21:03:27     84s] <CMD> set latch_time_borrow_mode max_borrow
+[11/09 21:03:27     84s] <CMD> set pegDefaultResScaleFactor 1
+[11/09 21:03:27     84s] <CMD> set pegDetailResScaleFactor 1
+[11/09 21:03:27     84s] <CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+[11/09 21:03:27     84s] <CMD> set timing_library_ccs_noise_vin_clip_points {}
+[11/09 21:03:27     84s] <CMD> set timing_library_ccs_noise_vout_clip_points {}
+[11/09 21:03:27     84s] <CMD> set timing_library_load_pin_cap_indices {}
+[11/09 21:03:27     84s] <CMD> set timing_library_write_library_to_directory {}
+[11/09 21:03:27     84s] <CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[11/09 21:03:27     84s] <CMD> init_design
+[11/09 21:03:27     84s] **WARN: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[11/09 21:03:27     84s] 
+[11/09 21:03:27     84s] *** Summary of all messages that are not suppressed in this session:
+[11/09 21:03:27     84s] Severity  ID               Count  Summary                                  
+[11/09 21:03:27     84s] WARNING   IMPSYT-7329          1  Cannot load design with init_design, aft...
+[11/09 21:03:27     84s] *** Message Summary: 1 warning(s), 0 error(s)
+[11/09 21:03:27     84s] 
+[11/09 21:03:27     84s] <CMD> floorPlan -r 1.0 0.6 50 50 50 50
+[11/09 21:03:27     84s] floorPlan cannot be used in timer mode
+[11/09 21:03:42     85s] **INFO (INTERRUPT): The current script will stop before next command.
+[11/09 21:03:42     85s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[11/09 21:04:16     89s] <CMD> setDrawView ameba
+[11/09 21:04:17     89s] <CMD> setDrawView place
+[11/09 21:04:19     89s] <CMD> setDrawView fplan
+[11/09 21:04:21     89s] <CMD> setDrawView fplan
+[11/09 21:04:22     89s] <CMD> setDrawView place
+[11/09 21:04:23     90s] <CMD> setDrawView fplan
+[11/09 21:04:30     91s] <CMD> setDrawView place
+[11/09 21:05:29     96s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/09 21:05:29     96s] <CMD> suppressMessage ENCEXT-2799
+[11/09 21:05:29     96s] <CMD> getDrawView
+[11/09 21:05:29     96s] <CMD> loadWorkspace -name Physical
+[11/09 21:05:29     96s] <CMD> win
+[11/09 21:05:29     96s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[11/09 21:05:29     96s] <CMD> set conf_qxconf_file NULL
+[11/09 21:05:29     96s] <CMD> set conf_qxlib_file NULL
+[11/09 21:05:29     96s] <CMD> set defHierChar /
+[11/09 21:05:29     96s] Set Default Input Pin Transition as 0.1 ps.
+[11/09 21:05:29     96s] <CMD> set delaycal_input_transition_delay 0.1ps
+[11/09 21:05:29     96s] <CMD> set distributed_client_message_echo 1
+[11/09 21:05:29     96s] <CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+[11/09 21:05:29     96s] <CMD> set floorplan_default_site core
+[11/09 21:05:29     96s] <CMD> set fpIsMaxIoHeight 0
+[11/09 21:05:29     96s] <CMD> set init_gnd_net gnd
+[11/09 21:05:29     96s] <CMD> set init_io_file innovus.io
+[11/09 21:05:29     96s] <CMD> set init_lef_file {/package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.lef /package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.stacks.lef}
+[11/09 21:05:29     96s] <CMD> set init_mmmc_file osu05_MMMC.view
+[11/09 21:05:29     96s] <CMD> set init_oa_search_lib {}
+[11/09 21:05:29     96s] <CMD> set init_pwr_net vdd
+[11/09 21:05:29     96s] <CMD> set init_verilog mapped/layout_lab_design.v
+[11/09 21:05:29     96s] <CMD> set latch_time_borrow_mode max_borrow
+[11/09 21:05:29     96s] <CMD> set pegDefaultResScaleFactor 1
+[11/09 21:05:29     96s] <CMD> set pegDetailResScaleFactor 1
+[11/09 21:05:29     96s] <CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+[11/09 21:05:29     96s] <CMD> set timing_library_ccs_noise_vin_clip_points {}
+[11/09 21:05:29     96s] <CMD> set timing_library_ccs_noise_vout_clip_points {}
+[11/09 21:05:29     96s] <CMD> set timing_library_load_pin_cap_indices {}
+[11/09 21:05:29     96s] <CMD> set timing_library_write_library_to_directory {}
+[11/09 21:05:29     96s] <CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[11/09 21:05:29     96s] <CMD> init_design
+[11/09 21:05:29     96s] **WARN: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[11/09 21:05:29     96s] 
+[11/09 21:05:29     96s] *** Summary of all messages that are not suppressed in this session:
+[11/09 21:05:29     96s] Severity  ID               Count  Summary                                  
+[11/09 21:05:29     96s] WARNING   IMPSYT-7329          1  Cannot load design with init_design, aft...
+[11/09 21:05:29     96s] *** Message Summary: 1 warning(s), 0 error(s)
+[11/09 21:05:29     96s] 
+[11/09 21:05:29     96s] <CMD> floorPlan -r 1.0 0.6 50 50 50 50
+[11/09 21:05:29     96s] floorPlan cannot be used in timer mode
+[11/09 21:07:02    107s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/09 21:07:02    107s] <CMD> suppressMessage ENCEXT-2799
+[11/09 21:07:02    107s] <CMD> getDrawView
+[11/09 21:07:02    107s] <CMD> loadWorkspace -name Physical
+[11/09 21:07:02    107s] <CMD> win
+[11/09 21:07:02    107s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[11/09 21:07:02    107s] <CMD> set conf_qxconf_file NULL
+[11/09 21:07:02    107s] <CMD> set conf_qxlib_file NULL
+[11/09 21:07:02    107s] <CMD> set defHierChar /
+[11/09 21:07:02    107s] Set Default Input Pin Transition as 0.1 ps.
+[11/09 21:07:02    107s] <CMD> set delaycal_input_transition_delay 0.1ps
+[11/09 21:07:02    107s] <CMD> set distributed_client_message_echo 1
+[11/09 21:07:02    107s] <CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+[11/09 21:07:02    107s] <CMD> set floorplan_default_site core
+[11/09 21:07:02    107s] <CMD> set fpIsMaxIoHeight 0
+[11/09 21:07:02    107s] <CMD> set init_gnd_net gnd
+[11/09 21:07:02    107s] <CMD> set init_io_file innovus.io
+[11/09 21:07:02    107s] <CMD> set init_lef_file {/package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.lef /package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.stacks.lef}
+[11/09 21:07:02    107s] <CMD> set init_mmmc_file osu05_MMMC.view
+[11/09 21:07:02    107s] <CMD> set init_oa_search_lib {}
+[11/09 21:07:02    107s] <CMD> set init_pwr_net vdd
+[11/09 21:07:02    107s] <CMD> set init_verilog mapped/layout_lab_design.v
+[11/09 21:07:02    107s] <CMD> set latch_time_borrow_mode max_borrow
+[11/09 21:07:02    107s] <CMD> set pegDefaultResScaleFactor 1
+[11/09 21:07:02    107s] <CMD> set pegDetailResScaleFactor 1
+[11/09 21:07:02    107s] <CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+[11/09 21:07:02    107s] <CMD> set timing_library_ccs_noise_vin_clip_points {}
+[11/09 21:07:02    107s] <CMD> set timing_library_ccs_noise_vout_clip_points {}
+[11/09 21:07:02    107s] <CMD> set timing_library_load_pin_cap_indices {}
+[11/09 21:07:02    107s] <CMD> set timing_library_write_library_to_directory {}
+[11/09 21:07:02    107s] <CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[11/09 21:07:02    107s] <CMD> init_design
+[11/09 21:07:02    107s] **WARN: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[11/09 21:07:02    107s] 
+[11/09 21:07:02    107s] *** Summary of all messages that are not suppressed in this session:
+[11/09 21:07:02    107s] Severity  ID               Count  Summary                                  
+[11/09 21:07:02    107s] WARNING   IMPSYT-7329          1  Cannot load design with init_design, aft...
+[11/09 21:07:02    107s] *** Message Summary: 1 warning(s), 0 error(s)
+[11/09 21:07:02    107s] 
+[11/09 21:07:02    107s] <CMD> floorPlan -r 1.0 0.6 50 50 50 50
+[11/09 21:07:02    107s] floorPlan cannot be used in timer mode
+[11/09 21:08:54    121s] <CMD> deleteAllFPObjects
+[11/09 21:08:54    121s] Innovus terminated by internal (SEGV) error/signal...
+[11/09 21:08:54    121s] *** Stack trace:
+*** Stack trace:
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus[0xcea9c7a]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(syStackTrace+0x7c)[0xceaa04c]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus[0x316df15]
+/lib64/libpthread.so.0(+0x302380f7e0)[0x7f893cbf17e0]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(_Z31dbFPlanClearAllPartialPlaceBlksP8dbsFPlan+0x7)[0x9668d17]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus[0x32476c6]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(_ZN10tcmBaseCmd7executeEP10Tcl_InterpiPPc+0x229)[0xe82c309]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(_ZN6tcmMgr9cmdParserEPvP10Tcl_InterpiPPc+0x5c7)[0xe816397]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(TclInvokeStringCommand+0x80)[0x10cc6980]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(TclNRRunCallbacks+0x47)[0x10ccb227]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus[0x10ccd281]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus[0x10d93904]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus[0x10ccd0ba]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(Tcl_EvalEx+0x16)[0x10ccdb86]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(Tcl_Eval+0x15)[0x10ccdba5]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(_Z10qtfTclEvalPcb+0x69)[0xb8cb189]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(_ZN8qtfsItem10fUpdateVarEv+0x307)[0xb87e007]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4(_ZN11QMetaObject8activateEP7QObjectPKS_iPPv+0x29a)[0x7f89404564ca]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4(_ZN15QAbstractButton7clickedEb+0x32)[0x7f89411b7be2]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4(_ZN22QAbstractButtonPrivate11emitClickedEv+0x33)[0x7f8940edcf83]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4(_ZN22QAbstractButtonPrivate5clickEv+0x83)[0x7f8940eddfe3]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4(_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent+0x6c)[0x7f8940ede0cc]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4(_ZN7QWidget5eventEP6QEvent+0xbbb)[0x7f8940b2144b]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4(_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent+0x8c)[0x7f8940acb36c]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4(_ZN12QApplication6notifyEP7QObjectP6QEvent+0x3d6)[0x7f8940ad3e56]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4(_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent+0x6d)[0x7f894043be8d]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4(_ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_Eb+0x153)[0x7f8940ad35e3]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4(_ZN9QETWidget19translateMouseEventEPK7_XEvent+0xa5d)[0x7f8940b4b60d]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4(_ZN12QApplication15x11ProcessEventEP7_XEvent+0x78e)[0x7f8940b49bbe]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4(_ZN19QEventDispatcherX1113processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x24e)[0x7f8940b7273e]
+/package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x183)[0x7f8941bcaf33]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4(_ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x2f)[0x7f8940440c4f]
+/package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so(+0x1f2ec)[0x7f8941bcb2ec]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(Tcl_DoOneEvent+0xc0)[0x10d8d3e0]
+/package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x7f)[0x7f8941bcae2f]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4(_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE+0x2f)[0x7f894043a02f]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4(_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE+0x17d)[0x7f894043a32d]
+/package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4(_ZN16QCoreApplication4execEv+0x89)[0x7f89404415a9]
+/package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so(_ZN13TqApplication4execEv+0xdf)[0x7f8941bcd87f]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(_Z12edi_app_initP10Tcl_Interp+0x259)[0x3206949]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(Tcl_MainEx+0x177)[0x10d87c77]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus(main+0x1d6)[0x2d507b6]
+/lib64/libc.so.6(__libc_start_main+0x100)[0x302301ed20]
+/package/eda/cadence/INNOVUS161/tools/innovus/bin/64bit/innovus[0x316ab39]
+========================================
+               pstack
+========================================
+Thread 7 (Thread 0x7f893b799700 (LWP 23002)):
+#0  0x00000030230e16a3 in select () from /lib64/libc.so.6
+#1  0x0000000010dcac18 in NotifierThreadProc ()
+#2  0x0000000003393f39 in create_head(void*) ()
+#3  0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00000030230e8c4d in clone () from /lib64/libc.so.6
+Thread 6 (Thread 0x7f8934a91700 (LWP 23004)):
+#0  0x00000030230accbd in nanosleep () from /lib64/libc.so.6
+#1  0x00000030230acb30 in sleep () from /lib64/libc.so.6
+#2  0x000000000cec3880 in syiPeakMem(void*) ()
+#3  0x0000000003393f39 in create_head(void*) ()
+#4  0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00000030230e8c4d in clone () from /lib64/libc.so.6
+Thread 5 (Thread 0x7f8933d8f700 (LWP 23005)):
+#0  0x00007f893cbf100d in nanosleep () from /lib64/libpthread.so.0
+#1  0x000000000440b159 in rdaiLicRecheck(void*) ()
+#2  0x0000000003393f39 in create_head(void*) ()
+#3  0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00000030230e8c4d in clone () from /lib64/libc.so.6
+Thread 4 (Thread 0x7f8930331700 (LWP 23007)):
+#0  0x00007f893cbf1585 in sigwait () from /lib64/libpthread.so.0
+#1  0x000000000316af3d in ctrlCHandle(void*) ()
+#2  0x0000000003393f39 in create_head(void*) ()
+#3  0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00000030230e8c4d in clone () from /lib64/libc.so.6
+Thread 3 (Thread 0x7f891b49f700 (LWP 23024)):
+#0  0x00007f893cbed68c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00007f89403129f6 in QWaitCondition::wait(QMutex*, unsigned long) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#2  0x00007f894101edde in QFileInfoGatherer::run() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#3  0x00007f8940311f4b in QThreadPrivate::start(void*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#4  0x0000000003393f39 in create_head(void*) ()
+#5  0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00000030230e8c4d in clone () from /lib64/libc.so.6
+Thread 2 (Thread 0x7f891a890700 (LWP 23025)):
+#0  0x00000030230e16a3 in select () from /lib64/libc.so.6
+#1  0x00007f894046d59b in qt_safe_select(int, fd_set*, fd_set*, fd_set*, timeval const*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#2  0x00007f8940471d73 in QEventDispatcherUNIXPrivate::doSelect(QFlags<QEventLoop::ProcessEventsFlag>, timeval*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#3  0x00007f8940472472 in QEventDispatcherUNIX::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#4  0x00007f894043a02f in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#5  0x00007f894043a32d in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#6  0x00007f894030f39f in QThread::exec() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#7  0x00007f8940417d93 in QInotifyFileSystemWatcherEngine::run() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#8  0x00007f8940311f4b in QThreadPrivate::start(void*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#9  0x0000000003393f39 in create_head(void*) ()
+#10 0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#11 0x00000030230e8c4d in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x7f893bb13140 (LWP 22924)):
+#0  0x00000030230ac8dd in waitpid () from /lib64/libc.so.6
+#1  0x000000302303e4e9 in do_system () from /lib64/libc.so.6
+#2  0x000000302303e820 in system () from /lib64/libc.so.6
+#3  0x000000000cea9cc9 in syStackTraceDump(_IO_FILE*, bool) ()
+#4  0x000000000ceaa04c in syStackTrace ()
+#5  0x000000000316df15 in rdaiErrorHandler(int, siginfo*, void*) ()
+#6  <signal handler called>
+#7  0x0000000009668d17 in dbFPlanClearAllPartialPlaceBlks(dbsFPlan*) ()
+#8  0x00000000032476c6 in rdaiDeleteAllDensityAreasCmd ()
+#9  0x000000000e82c309 in tcmBaseCmd::execute(Tcl_Interp*, int, char**) ()
+#10 0x000000000e816397 in tcmMgr::cmdParser(void*, Tcl_Interp*, int, char**) ()
+#11 0x0000000010cc6980 in TclInvokeStringCommand ()
+#12 0x0000000010ccb227 in TclNRRunCallbacks ()
+#13 0x0000000010ccd281 in TclEvalEx ()
+#14 0x0000000010d93904 in TclSubstTokens ()
+#15 0x0000000010ccd0ba in TclEvalEx ()
+#16 0x0000000010ccdb86 in Tcl_EvalEx ()
+#17 0x0000000010ccdba5 in Tcl_Eval ()
+#18 0x000000000b8cb189 in qtfTclEval(char*, bool) ()
+#19 0x000000000b87e007 in qtfsItem::fUpdateVar() ()
+#20 0x00007f89404564ca in QMetaObject::activate(QObject*, QMetaObject const*, int, void**) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#21 0x00007f89411b7be2 in QAbstractButton::clicked(bool) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#22 0x00007f8940edcf83 in QAbstractButtonPrivate::emitClicked() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#23 0x00007f8940eddfe3 in QAbstractButtonPrivate::click() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#24 0x00007f8940ede0cc in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#25 0x00007f8940b2144b in QWidget::event(QEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#26 0x00007f8940acb36c in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#27 0x00007f8940ad3e56 in QApplication::notify(QObject*, QEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#28 0x00007f894043be8d in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#29 0x00007f8940ad35e3 in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#30 0x00007f8940b4b60d in QETWidget::translateMouseEvent(_XEvent const*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#31 0x00007f8940b49bbe in QApplication::x11ProcessEvent(_XEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#32 0x00007f8940b7273e in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#33 0x00007f8941bcaf33 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so
+#34 0x00007f8940440c4f in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#35 0x00007f8941bcb2ec in tcl_dispatch_qt () from /package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so
+#36 0x0000000010d8d3e0 in Tcl_DoOneEvent ()
+#37 0x00007f8941bcae2f in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so
+#38 0x00007f894043a02f in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#39 0x00007f894043a32d in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#40 0x00007f89404415a9 in QCoreApplication::exec() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#41 0x00007f8941bcd87f in TqApplication::exec() () from /package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so
+#42 0x0000000003206949 in edi_app_init(Tcl_Interp*) ()
+#43 0x0000000010d87c77 in Tcl_MainEx ()
+#44 0x0000000002d507b6 in main ()
+========================================
+                gdb
+========================================
+Using: gdb
+[New LWP 23025]
+[New LWP 23024]
+[New LWP 23007]
+[New LWP 23005]
+[New LWP 23004]
+[New LWP 23002]
+[Thread debugging using libthread_db enabled]
+0x00000030230ac8dd in waitpid () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7f893b799700 (LWP 23002)):
+#0  0x00000030230e16a3 in select () from /lib64/libc.so.6
+#1  0x0000000010dcac18 in NotifierThreadProc ()
+#2  0x0000000003393f39 in create_head(void*) ()
+No locals.
+#3  0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00000030230e8c4d in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7f8934a91700 (LWP 23004)):
+#0  0x00000030230accbd in nanosleep () from /lib64/libc.so.6
+#1  0x00000030230acb30 in sleep () from /lib64/libc.so.6
+#2  0x000000000cec3880 in syiPeakMem(void*) ()
+No locals.
+#3  0x0000000003393f39 in create_head(void*) ()
+No locals.
+#4  0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00000030230e8c4d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7f8933d8f700 (LWP 23005)):
+#0  0x00007f893cbf100d in nanosleep () from /lib64/libpthread.so.0
+#1  0x000000000440b159 in rdaiLicRecheck(void*) ()
+No locals.
+#2  0x0000000003393f39 in create_head(void*) ()
+No locals.
+#3  0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00000030230e8c4d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7f8930331700 (LWP 23007)):
+#0  0x00007f893cbf1585 in sigwait () from /lib64/libpthread.so.0
+#1  0x000000000316af3d in ctrlCHandle(void*) ()
+        google::protobuf::internal::utf8acceptnonsurrogates_obj = {state0 = 0, state0_size = 256, total_size = 2304, max_expand = 0, entry_shift = 8, bytes_per_entry = 1, losub = 538976288, hiadd = 0, state_table = 0x1577d2c0 "", remap_base = 0x1577d2a2, remap_string = 0x1577d2a0 "", fast_state = 0x1577d1a0 ""}
+        google::protobuf::internal::(anonymous namespace)::module_initialized_ = true
+#2  0x0000000003393f39 in create_head(void*) ()
+No locals.
+#3  0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00000030230e8c4d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7f891b49f700 (LWP 23024)):
+#0  0x00007f893cbed68c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00007f89403129f6 in QWaitCondition::wait(QMutex*, unsigned long) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#2  0x00007f894101edde in QFileInfoGatherer::run() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#3  0x00007f8940311f4b in QThreadPrivate::start(void*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#4  0x0000000003393f39 in create_head(void*) ()
+No locals.
+#5  0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00000030230e8c4d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7f891a890700 (LWP 23025)):
+#0  0x00000030230e16a3 in select () from /lib64/libc.so.6
+#1  0x00007f894046d59b in qt_safe_select(int, fd_set*, fd_set*, fd_set*, timeval const*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#2  0x00007f8940471d73 in QEventDispatcherUNIXPrivate::doSelect(QFlags<QEventLoop::ProcessEventsFlag>, timeval*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#3  0x00007f8940472472 in QEventDispatcherUNIX::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#4  0x00007f894043a02f in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#5  0x00007f894043a32d in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#6  0x00007f894030f39f in QThread::exec() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#7  0x00007f8940417d93 in QInotifyFileSystemWatcherEngine::run() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#8  0x00007f8940311f4b in QThreadPrivate::start(void*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#9  0x0000000003393f39 in create_head(void*) ()
+No locals.
+#10 0x00007f893cbe9aa1 in start_thread () from /lib64/libpthread.so.0
+#11 0x00000030230e8c4d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f893bb13140 (LWP 22924)):
+#0  0x00000030230ac8dd in waitpid () from /lib64/libc.so.6
+#1  0x000000302303e4e9 in do_system () from /lib64/libc.so.6
+#2  0x000000302303e820 in system () from /lib64/libc.so.6
+#3  0x000000000cea9cc9 in syStackTraceDump(_IO_FILE*, bool) ()
+No locals.
+#4  0x000000000ceaa04c in syStackTrace ()
+No locals.
+#5  0x000000000316df15 in rdaiErrorHandler(int, siginfo*, void*) ()
+        google::protobuf::internal::utf8acceptnonsurrogates_obj = {state0 = 0, state0_size = 256, total_size = 2304, max_expand = 0, entry_shift = 8, bytes_per_entry = 1, losub = 538976288, hiadd = 0, state_table = 0x1577d2c0 "", remap_base = 0x1577d2a2, remap_string = 0x1577d2a0 "", fast_state = 0x1577d1a0 ""}
+        google::protobuf::internal::(anonymous namespace)::module_initialized_ = true
+#6  <signal handler called>
+#7  0x0000000009668d17 in dbFPlanClearAllPartialPlaceBlks(dbsFPlan*) ()
+No locals.
+#8  0x00000000032476c6 in rdaiDeleteAllDensityAreasCmd ()
+No locals.
+#9  0x000000000e82c309 in tcmBaseCmd::execute(Tcl_Interp*, int, char**) ()
+No locals.
+#10 0x000000000e816397 in tcmMgr::cmdParser(void*, Tcl_Interp*, int, char**) ()
+No locals.
+#11 0x0000000010cc6980 in TclInvokeStringCommand ()
+#12 0x0000000010ccb227 in TclNRRunCallbacks ()
+#13 0x0000000010ccd281 in TclEvalEx ()
+#14 0x0000000010d93904 in TclSubstTokens ()
+#15 0x0000000010ccd0ba in TclEvalEx ()
+#16 0x0000000010ccdb86 in Tcl_EvalEx ()
+#17 0x0000000010ccdba5 in Tcl_Eval ()
+#18 0x000000000b8cb189 in qtfTclEval(char*, bool) ()
+No locals.
+#19 0x000000000b87e007 in qtfsItem::fUpdateVar() ()
+No locals.
+#20 0x00007f89404564ca in QMetaObject::activate(QObject*, QMetaObject const*, int, void**) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#21 0x00007f89411b7be2 in QAbstractButton::clicked(bool) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#22 0x00007f8940edcf83 in QAbstractButtonPrivate::emitClicked() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#23 0x00007f8940eddfe3 in QAbstractButtonPrivate::click() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#24 0x00007f8940ede0cc in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#25 0x00007f8940b2144b in QWidget::event(QEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#26 0x00007f8940acb36c in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#27 0x00007f8940ad3e56 in QApplication::notify(QObject*, QEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#28 0x00007f894043be8d in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#29 0x00007f8940ad35e3 in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#30 0x00007f8940b4b60d in QETWidget::translateMouseEvent(_XEvent const*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#31 0x00007f8940b49bbe in QApplication::x11ProcessEvent(_XEvent*) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#32 0x00007f8940b7273e in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtGui.so.4
+#33 0x00007f8941bcaf33 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so
+#34 0x00007f8940440c4f in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#35 0x00007f8941bcb2ec in tcl_dispatch_qt () from /package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so
+#36 0x0000000010d8d3e0 in Tcl_DoOneEvent ()
+#37 0x00007f8941bcae2f in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so
+#38 0x00007f894043a02f in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#39 0x00007f894043a32d in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#40 0x00007f89404415a9 in QCoreApplication::exec() () from /package/eda/cadence/INNOVUS161/tools/Qt/64bit/lib/libcdsQtCore.so.4
+#41 0x00007f8941bcd87f in TqApplication::exec() () from /package/eda/cadence/INNOVUS161/tools/lib/64bit/libtq.so
+#42 0x0000000003206949 in edi_app_init(Tcl_Interp*) ()
+        google::protobuf::internal::log_silencer_count_mutex_ = 0x0
+        google::protobuf::internal::log_handler_ = 0x107fac80 <google::protobuf::internal::DefaultLogHandler(google::protobuf::LogLevel, char const*, int, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>
+        google::protobuf::internal::log_silencer_count_ = 0
+        google::protobuf::internal::shutdown_functions_mutex = 0x7f893b99b920
+        google::protobuf::internal::shutdown_functions_init = 2
+        google::protobuf::internal::log_silencer_count_init_ = 0
+        google::protobuf::internal::shutdown_functions = 0x7f893577eb00
+#43 0x0000000010d87c77 in Tcl_MainEx ()
+#44 0x0000000002d507b6 in main ()
+No locals.
+A debugging session is active.
+
+	Inferior 1 [process 22924] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+[11/09 21:09:18    121s] 
+[11/09 21:09:18    121s] *** Memory Usage v#1 (Current mem = 659.652M, initial mem = 166.574M) ***
+[11/09 21:09:18    121s] 
+[11/09 21:09:18    121s] *** Summary of all messages that are not suppressed in this session:
+[11/09 21:09:18    121s] Severity  ID               Count  Summary                                  
+[11/09 21:09:18    121s] WARNING   IMPSYT-7329          6  Cannot load design with init_design, aft...
+[11/09 21:09:18    121s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[11/09 21:09:18    121s] WARNING   IMPDB-2504          19  Cell '%s' is instantiated in the Verilog...
+[11/09 21:09:18    121s] *** Message Summary: 26 warning(s), 0 error(s)
+[11/09 21:09:18    121s] 
+[11/09 21:09:18    121s] --- Ending "Innovus" (totcpu=0:02:02, real=0:18:41, mem=659.7M) ---
